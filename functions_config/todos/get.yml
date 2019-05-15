@@ -1,0 +1,7 @@
+handler: src/todos/todos.get
+events:
+  - http:
+      path: todos/get/{id}
+      method: get
+      cors: true
+      timeout: 45

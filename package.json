@@ -1,0 +1,17 @@
+{
+  "name": "serverless-rest-api",
+  "version": "1.0.0",
+  "description": "Simple AWS Lambda Serverless Knowlege base",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack -p --progress --profile --colors --mode production && NODE_ENV=production node server",
+    "start:dev": "node server"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.429.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "serverless-offline": "^4.9.2",
+    "uuid": "^3.3.2"
+  }
+}

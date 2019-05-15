@@ -1,0 +1,7 @@
+handler: src/ads/index.submission
+events:
+  - http:
+      path: submission
+      method: post
+      cors: true
+      timeout: 45

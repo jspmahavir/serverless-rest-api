@@ -1,0 +1,7 @@
+handler: src/convert/index.encryptText
+events:
+  - http:
+      path: encrypt
+      method: post
+      cors: true
+      timeout: 45

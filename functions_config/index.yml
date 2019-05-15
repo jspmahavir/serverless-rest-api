@@ -1,0 +1,28 @@
+hello:
+  handler: handler.hello
+  events:
+    - http:
+        method: GET
+        path: /
+        cors: true
+
+create: ${file(functions_config/todos/create.yml)}
+list: ${file(functions_config/todos/list.yml)}
+get: ${file(functions_config/todos/get.yml)}
+update: ${file(functions_config/todos/update.yml)}
+encrypt: ${file(functions_config/convert/encrypt.yml)}
+decrypt: ${file(functions_config/convert/decrypt.yml)}
+impression : ${file(functions_config/ads/impression.yml)}
+submission : ${file(functions_config/ads/submission.yml)}
+checks : ${file(functions_config/ads/checks.yml)}
+#activepages : ${file(functions_config/pages/active.yml)}
+pages : ${file(functions_config/pages/page.yml)}
+
+# Manually declare event.
+# query:
+#   handler: src/todos/todos.query
+#   events:
+#     - http:
+#         method: GET
+#         path: todos/query
+#         cors: true

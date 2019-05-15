@@ -1,0 +1,7 @@
+handler: src/convert/index.decryptText
+events:
+  - http:
+      path: decrypt
+      method: post
+      cors: true
+      timeout: 45

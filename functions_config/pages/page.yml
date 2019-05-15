@@ -1,0 +1,7 @@
+handler: src/pages/page.getpage
+events:
+  - http:
+      path: page/{pagecode}
+      method: get
+      cors: true
+      timeout: 45

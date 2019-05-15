@@ -1,0 +1,7 @@
+handler: src/todos/todos.create
+events:
+  - http:
+      path: todos/create
+      method: post
+      cors: true
+      timeout: 45

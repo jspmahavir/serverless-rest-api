@@ -1,0 +1,7 @@
+handler: src/ads/index.checks
+events:
+  - http:
+      path: checks
+      method: post
+      cors: true
+      timeout: 45

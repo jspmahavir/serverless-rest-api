@@ -1,0 +1,7 @@
+handler: src/pages/page.activepages
+events:
+  - http:
+      path: pages
+      method: get
+      cors: true
+      timeout: 45

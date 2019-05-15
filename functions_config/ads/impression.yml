@@ -1,0 +1,7 @@
+handler: src/ads/index.impression
+events:
+  - http:
+      path: impression
+      method: post
+      cors: true
+      timeout: 45
